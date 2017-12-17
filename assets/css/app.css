@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: monospace;
+}
+
+button {
+  cursor: pointer;
+  font-family: monospace;
+  color: blue;
+  text-decoration: underline;
+  background: transparent;
+  border: 0;
+}
+
+header {
+  height: 60px;
+}
+header > ul {
+  height: 60px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+header > ul > li {
+  display: block;
+  padding: 0 10px;
+}
+
+main {
+  padding: 0 20px;
+}

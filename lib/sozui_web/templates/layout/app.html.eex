@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SozUI</title>
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><button data-command="status">Status</button></li>
+        <li><button data-command="workers">Workers</button></li>
+        <li><button data-command="upgrade-master">Upgrade Master</button></li>
+        <li><button data-command="soft-stop">Soft Stop</button></li>
+        <li><button data-command="dump-state">Dump State</button></li>
+      </ul>
+    </header>
+    <main>
+    <%= render @view_module, @view_template, assigns %>
+    </main>
+    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>
