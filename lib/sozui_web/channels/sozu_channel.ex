@@ -7,7 +7,7 @@ defmodule SozUIWeb.SozuChannel do
   alias ExSozu.Command
   alias Phoenix.Socket
 
-  def join("sozu:lobby", payload, socket) do
+  def join("sozu:lobby", _payload, socket) do
     {:ok, socket}
   end
 
